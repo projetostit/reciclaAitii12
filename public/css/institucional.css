@@ -226,7 +226,7 @@ form > div:last-child {
 }
 
 .formMain {
-  margin-bottom: 30px;
+  margin:0 15px 30px 15px ;
 }
 
 *{box-sizing:border-box}
