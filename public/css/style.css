@@ -2540,12 +2540,46 @@ img {
 }
 
 /* Integração com o index institucional */
-.login-back-link{
-  display:inline-flex;
-  align-items:center;
-  gap:6px;
-  width:max-content;
-  margin-bottom:18px;
-  text-decoration:none;
-  font-weight:700;
+.login-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+
+  width: max-content;
+  margin-bottom: 24px;
+  padding: 10px 14px;
+
+  border: 1px solid #b8d9c7;
+  border-radius: 10px;
+
+  background: #f2fbf6;
+  color: var(--green-700);
+
+  font-size: 12px;
+  font-weight: 800;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.login-back-link:hover {
+  background: var(--green-700);
+  border-color: var(--green-700);
+  color: #fff;
+
+  transform: translateX(-2px);
+  box-shadow: 0 7px 18px rgba(0, 91, 67, 0.14);
+}
+
+.login-back-link:focus-visible {
+  outline: 3px solid rgba(22, 165, 102, 0.22);
+  outline-offset: 3px;
+}
+
+.login-back-icon {
+  font-size: 16px;
+  line-height: 1;
 }
