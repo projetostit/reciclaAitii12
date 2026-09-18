@@ -1172,9 +1172,22 @@ function initTopUserMenu(){
   });
 
   menu.addEventListener("click", event => {
-    event.stopPropagation();
-    if(event.target.closest("a")) setOpen(false);
-  });
+  const logoutButton = event.target.closest(".user-dropdown-logout");
+
+  if(logoutButton){
+    event.preventDefault();
+
+    clearAuth();
+    location.replace("login.html");
+    return;
+  }
+
+  event.stopPropagation();
+
+  if(event.target.closest("a")){
+    setOpen(false);
+  }
+});
 
   document.addEventListener("click", event => {
     if(!menu.classList.contains("open")) return;
